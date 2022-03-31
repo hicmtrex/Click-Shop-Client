@@ -11,5 +11,9 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
-  publicPath: import.meta.env.VITE_API_ENV === 'production' ? '/' : '/',
+  build: {
+    rollupOptions: {
+      external: ['vue', 'bootstrap'],
+    },
+  },
 });
