@@ -14,18 +14,18 @@
       <div class="col-12 col-md-4 p-5 mt-3">
         <a href="#"
           ><img
-            src="../assets/img/Muscle_Fit_white.jfif"
+            src="/images/Muscle_Fit_white.jfif"
             class="rounded-circle img-fluid border"
         /></a>
         <h5 class="text-center mt-3 mb-3">Collar Shirt</h5>
         <p class="text-center">
-          <router-link to="" class="btn btn-success">Go Shop</router-link>
+          <router-link to="/shop" class="btn btn-success">Go Shop</router-link>
         </p>
       </div>
       <div class="col-12 col-md-4 p-5 mt-3">
         <a href="#"
           ><img
-            src="../assets/img/Relaxed_hoodie_2.jfif"
+            src="/images/Relaxed_hoodie_2.jfif"
             class="rounded-circle img-fluid border"
         /></a>
         <h2 class="h5 text-center mt-3 mb-3">Hoodie</h2>
@@ -36,7 +36,7 @@
       <div class="col-12 col-md-4 p-5 mt-3">
         <a href="#"
           ><img
-            src="../assets/img/Printed_T-shirt_1.jfif"
+            src="/images/Printed_T-shirt_1.jfif"
             class="rounded-circle img-fluid border"
         /></a>
         <h2 class="h5 text-center mt-3 mb-3">T-Shirt</h2>
