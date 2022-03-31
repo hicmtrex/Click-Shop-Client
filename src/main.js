@@ -5,6 +5,7 @@ import './assets/style.css';
 import store from './store';
 import 'vue-toastification/dist/index.css';
 import Toast from 'vue-toastification';
+import './assets/bootstrap.min.js';
 
 const options = {
   // You can set your default options here
