@@ -14,7 +14,7 @@
       <div class="col-12 col-md-4 p-5 mt-3">
         <a href="#"
           ><img
-            src="/images/Muscle_Fit_white.jfif"
+            src="https://img.kytary.com/eshop_ie/velky_v2/na/637329305569630000/6a127d21/64771944/ant-tshirt-ant-blu-l.jpg"
             class="rounded-circle img-fluid border"
         /></a>
         <h5 class="text-center mt-3 mb-3">Collar Shirt</h5>
@@ -25,7 +25,7 @@
       <div class="col-12 col-md-4 p-5 mt-3">
         <a href="#"
           ><img
-            src="/images/Relaxed_hoodie_2.jfif"
+            src="https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F7c%2F86%2F7c8693b5730eb35bf96e723e5d32aa0dd665d5a2.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/fullscreen]"
             class="rounded-circle img-fluid border"
         /></a>
         <h2 class="h5 text-center mt-3 mb-3">Hoodie</h2>
@@ -36,7 +36,7 @@
       <div class="col-12 col-md-4 p-5 mt-3">
         <a href="#"
           ><img
-            src="/images/Printed_T-shirt_1.jfif"
+            src="https://handcmediastorage.blob.core.windows.net/productimages/FV/FVPMA001-N01-144199-800px-1040px.jpg"
             class="rounded-circle img-fluid border"
         /></a>
         <h2 class="h5 text-center mt-3 mb-3">T-Shirt</h2>
