@@ -14,7 +14,7 @@
       <div class="col-12 col-md-4 p-5 mt-3">
         <a href="#"
           ><img
-            src="/images/Muscle_Fit_white.jfif"
+            src="images/Muscle_Fit_white.jfif"
             class="rounded-circle img-fluid border"
         /></a>
         <h5 class="text-center mt-3 mb-3">Collar Shirt</h5>
