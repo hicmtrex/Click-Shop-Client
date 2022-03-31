@@ -1,10 +1,7 @@
 import axios from 'axios';
 import store from '../store';
 
-export const API_URL =
-  import.meta.env.VITE_API_ENV === 'production'
-    ? import.meta.env.VITE_API_URL
-    : 'http://localhost:8000';
+export const API_URL = 'https://click-shop.herokuapp.com';
 
 export const setError = (error) => {
   const message =
