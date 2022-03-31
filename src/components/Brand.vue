@@ -40,7 +40,7 @@
                         <a href="#"
                           ><img
                             class="img-fluid brand-img"
-                            src="images/brand_01.png"
+                            src="/images/brand_01.png"
                             alt="Brand Logo"
                         /></a>
                       </div>
@@ -48,7 +48,7 @@
                         <a href="#"
                           ><img
                             class="img-fluid brand-img"
-                            src="images/brand_02.png"
+                            src="/images/brand_02.png"
                             alt="Brand Logo"
                         /></a>
                       </div>
@@ -56,7 +56,7 @@
                         <a href="#"
                           ><img
                             class="img-fluid brand-img"
-                            src="images/brand_03.png"
+                            src="/images/brand_03.png"
                             alt="Brand Logo"
                         /></a>
                       </div>
@@ -64,7 +64,7 @@
                         <a href="#"
                           ><img
                             class="img-fluid brand-img"
-                            src="images/brand_04.png"
+                            src="/images/brand_04.png"
                             alt="Brand Logo"
                         /></a>
                       </div>
@@ -79,7 +79,7 @@
                         <a href="#"
                           ><img
                             class="img-fluid brand-img"
-                            src="images/brand_01.png"
+                            src="/images/brand_01.png"
                             alt="Brand Logo"
                         /></a>
                       </div>
@@ -87,7 +87,7 @@
                         <a href="#"
                           ><img
                             class="img-fluid brand-img"
-                            src="images/brand_02.png"
+                            src="/images/brand_02.png"
                             alt="Brand Logo"
                         /></a>
                       </div>
@@ -95,7 +95,7 @@
                         <a href="#"
                           ><img
                             class="img-fluid brand-img"
-                            src="images/brand_03.png"
+                            src="/images/brand_03.png"
                             alt="Brand Logo"
                         /></a>
                       </div>
@@ -103,7 +103,7 @@
                         <a href="#"
                           ><img
                             class="img-fluid brand-img"
-                            src="images/brand_04.png"
+                            src="/images/brand_04.png"
                             alt="Brand Logo"
                         /></a>
                       </div>
@@ -118,7 +118,7 @@
                         <a href="#"
                           ><img
                             class="img-fluid brand-img"
-                            src="images/brand_01.png"
+                            src="/images/brand_01.png"
                             alt="Brand Logo"
                         /></a>
                       </div>
@@ -126,7 +126,7 @@
                         <a href="#"
                           ><img
                             class="img-fluid brand-img"
-                            src="images/brand_02.png"
+                            src="/images/brand_02.png"
                             alt="Brand Logo"
                         /></a>
                       </div>
@@ -134,7 +134,7 @@
                         <a href="#"
                           ><img
                             class="img-fluid brand-img"
-                            src="images/brand_03.png"
+                            src="/images/brand_03.png"
                             alt="Brand Logo"
                         /></a>
                       </div>
@@ -142,7 +142,7 @@
                         <a href="#"
                           ><img
                             class="img-fluid brand-img"
-                            src="images/brand_04.png"
+                            src="/images/brand_04.png"
                             alt="Brand Logo"
                         /></a>
                       </div>
