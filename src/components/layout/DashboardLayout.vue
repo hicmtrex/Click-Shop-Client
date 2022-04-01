@@ -12,10 +12,9 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import Sidebar from '../dashboard/Sidebar.vue';
 import Topbar from '../dashboard/Topbar.vue';
-export default { components: { Sidebar, Topbar } };
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped></style>

@@ -47,7 +47,7 @@ import UsersTable from '../../../components/dashboard/tables/UsersTable.vue';
 const store = useStore();
 const users = computed(() => store.state.users);
 const loading = computed(() => store.state.loading);
-console.log(users.value);
+
 const getUsersList = async () => {
   await store.dispatch('getUserList');
 };

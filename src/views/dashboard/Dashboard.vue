@@ -135,7 +135,7 @@ const loading = computed(() => store.state.loading);
 const earnMoney = orders.value
   .reduce((acc, order) => acc + order.totalPrice, 0)
   .toFixed(2);
-console.log(earnMoney);
+
 const ordersList = async () => {
   await store.dispatch('getOrdersList');
 };

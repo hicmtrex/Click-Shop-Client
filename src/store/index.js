@@ -31,11 +31,11 @@ const store = createStore({
     resetError(state) {
       state.error = null;
     },
-    productList(state, payload) {
+    setProducts(state, payload) {
       state.products = payload.data;
       state.total = payload.total;
     },
-    productDetail(state, payload) {
+    setProduct(state, payload) {
       state.product = payload;
     },
     fewProducts(state, payload) {
@@ -129,19 +129,25 @@ const store = createStore({
 
   actions: {
     //Products CRUD
-    async getAllProductList(context) {
+    /**
+     *public fetch all products
+     */
+    async getAllsetProducts(context) {
       try {
         context.state.loading = true;
         const res = await axios.get(`${API_URL}/api/products`);
         if (res.data) {
           context.state.loading = false;
-          context.commit('productList', res.data);
+          context.commit('setProducts', res.data);
         }
       } catch (error) {
         context.state.loading = false;
         context.state.error = setError(error);
       }
     },
+    /**
+     *public fetch 9 products per page
+     */
     async getProducts(context, page) {
       try {
         context.state.loading = true;
@@ -150,20 +156,25 @@ const store = createStore({
         );
         if (res.data) {
           context.state.loading = false;
-          context.commit('productList', res.data);
+          context.commit('setProducts', res.data);
         }
       } catch (error) {
         context.state.loading = false;
         context.state.error = setError(error);
       }
     },
+    /**
+     *
+     * public fetch product by id
+     * @param {String} id
+     */
     async getProductById(context, id) {
       try {
         context.state.loading = true;
         const res = await axios.get(`${API_URL}/api/products/${id}`);
         if (res.data) {
           context.state.loading = false;
-          context.commit('productDetail', res.data);
+          context.commit('setProduct', res.data);
         }
       } catch (error) {
         context.state.loading = false;
@@ -171,6 +182,9 @@ const store = createStore({
         return toast.error(context.state.error);
       }
     },
+    /**
+     * private admin create product
+     */
     async createProduct(context, product) {
       try {
         context.state.loading = true;
@@ -185,6 +199,10 @@ const store = createStore({
         return toast.error(context.state.error);
       }
     },
+    /**
+     * private admin update product
+     *  @param {String} id
+     */
     async updateProduct(context, product, id) {
       try {
         context.state.loading = true;
@@ -199,6 +217,10 @@ const store = createStore({
         return toast.error(context.state.error);
       }
     },
+    /**
+     * private admin delete product
+     *  @param {String} id
+     */
     async deleteProduct(context, productId) {
       try {
         context.state.loading = true;
@@ -213,6 +235,9 @@ const store = createStore({
         return toast.error(context.state.error);
       }
     },
+    /**
+     * public fetch random product
+     */
     async getFewProduct(context) {
       try {
         context.state.loading = true;
@@ -227,13 +252,17 @@ const store = createStore({
         toast.error(context.state.error);
       }
     },
+    /**
+     * public fetch product by name
+     * @param {String} name
+     */
     async searchProduct(context, name) {
       try {
         context.state.loading = true;
         const res = await axios.get(`${API_URL}/api/products_search/${name}`);
         if (res.data) {
           context.state.loading = false;
-          context.commit('productList', res.data);
+          context.commit('setProducts', res.data);
         }
       } catch (error) {
         context.state.loading = false;
@@ -241,6 +270,10 @@ const store = createStore({
         toast.error(context.state.error);
       }
     },
+    /**
+     * public fetch product by category
+     * @param {String} category
+     */
     async filter_product(context, category) {
       try {
         context.state.loading = true;
@@ -249,7 +282,7 @@ const store = createStore({
         );
         if (res.data) {
           context.state.loading = false;
-          context.commit('productList', res.data);
+          context.commit('setProducts', res.data);
         }
       } catch (error) {
         context.state.loading = false;
@@ -257,9 +290,12 @@ const store = createStore({
         toast.error(context.state.error);
       }
     },
-    //Cart shop
-    async addToCart(context, noob) {
-      const { data } = await axios.get(`${API_URL}/api/products/${noob._id}`);
+    /**
+     * fetch add product to basket
+     * @param {String} _id
+     */
+    async addToCart(context, c) {
+      const { data } = await axios.get(`${API_URL}/api/products/${c._id}`);
       context.commit('addToCart', {
         _id: data._id,
         name: data.name,

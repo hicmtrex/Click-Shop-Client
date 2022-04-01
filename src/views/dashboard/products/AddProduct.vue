@@ -120,7 +120,6 @@ const handleImageSelected = (e) => {
     return;
   }
   imageFile.value = e.target.files[0];
-  console.log(imageFile.value);
 };
 
 const onSubmit = () => {

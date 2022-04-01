@@ -14,7 +14,7 @@
       <div class="col-12 col-md-4 p-5 mt-3">
         <a href="#"
           ><img
-            src="https://img.kytary.com/eshop_ie/velky_v2/na/637329305569630000/6a127d21/64771944/ant-tshirt-ant-blu-l.jpg"
+            src="https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F0c%2Fb0%2F0cb0a49e053aa39ae0264bdc460bb378adba8e08.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_shirt_dressed_slimfit%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]"
             class="rounded-circle img-fluid border"
         /></a>
         <h5 class="text-center mt-3 mb-3">Collar Shirt</h5>
@@ -36,7 +36,7 @@
       <div class="col-12 col-md-4 p-5 mt-3">
         <a href="#"
           ><img
-            src="https://handcmediastorage.blob.core.windows.net/productimages/FV/FVPMA001-N01-144199-800px-1040px.jpg"
+            src="https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F17%2Ffe%2F17fe78cae6056f8162cd8b080297e1daacdd6846.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]"
             class="rounded-circle img-fluid border"
         /></a>
         <h2 class="h5 text-center mt-3 mb-3">T-Shirt</h2>
@@ -49,13 +49,11 @@
   <!-- End Categories of The Month -->
 </template>
 
-<script>
-export default {};
-</script>
+<script setup></script>
 
 <style scoped>
 img {
-  height: 400px;
+  height: 450px;
   width: 400px;
 }
 </style>

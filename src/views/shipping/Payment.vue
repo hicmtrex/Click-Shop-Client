@@ -86,15 +86,11 @@ const checkout = ref('');
 const { id } = route.params;
 
 const getSesstion = async (sessionId) => {
-  try {
-    const { data } = await axios.get(
-      `http://localhost:8000/api/sessions/${sessionId}`
-    );
+  const { data } = await axios.get(
+    `http://localhost:8000/api/sessions/${sessionId}`
+  );
 
-    checkout.value = data.url;
-  } catch (error) {
-    console.log(error);
-  }
+  checkout.value = data.url;
 };
 const getOrderDetail = async (orderId) => {
   await store.dispatch('getOrderById', orderId);
@@ -119,7 +115,6 @@ watch(
 if (route.params.id) {
   getOrderDetail(id);
   getSesstion(id);
-  console.log('test');
 }
 </script>
 

@@ -131,14 +131,13 @@ const router = useRouter();
 const cartItems = computed(() => store.state.cartItems);
 const userInfo = computed(() => store.state.userInfo);
 
-console.log(cartItems.value);
 const addToCart = (p) => {
   store.commit('addToCart', p);
 };
 const removeFromCart = (p) => {
   store.commit('removeFromCart', p);
 };
-console.log(cartItems.value);
+
 const deleteCart = (p) => {
   store.commit('deleteFromCart', p);
 };
