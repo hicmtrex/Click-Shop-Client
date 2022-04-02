@@ -75,6 +75,7 @@ import { useStore } from 'vuex';
 import Loader from '../../components/UI/Loader.vue';
 import { useRoute } from 'vue-router';
 import DefaultLayout from '../../components/layout/DefaultLayout.vue';
+import { API_URL } from '../../utils/help-api';
 
 const store = useStore();
 const order = computed(() => store.state.order);
@@ -86,9 +87,7 @@ const checkout = ref('');
 const { id } = route.params;
 
 const getSesstion = async (sessionId) => {
-  const { data } = await axios.get(
-    `http://localhost:8000/api/sessions/${sessionId}`
-  );
+  const { data } = await axios.get(`${API_URL}/api/sessions/${sessionId}`);
 
   checkout.value = data.url;
 };
@@ -96,9 +95,9 @@ const getOrderDetail = async (orderId) => {
   await store.dispatch('getOrderById', orderId);
 };
 
-// onMounted(() => {
-//   getSesstion(id);
-// });
+onMounted(() => {
+  getSesstion(id);
+});
 
 // onBeforeMount(() => {
 //   getOrderDetail(id);
