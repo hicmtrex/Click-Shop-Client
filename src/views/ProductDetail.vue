@@ -128,17 +128,17 @@
                     ></button>
                   </li>
                 </ul>
-                <div class="d-flex align-items-center">
-                  <h6 class="me-5">Avaliable Sizes :</h6>
-                  <div
-                    class="col-auto mx-2"
+                <div>
+                  <h6 class="mb-2">Avaliable Sizes :</h6>
+
+                  <button
                     v-for="s in product.sizes"
                     :key="s"
+                    @click="setSize(s)"
+                    class="btn btn-sm me-1 border-dark col-md-2"
                   >
-                    <button @click="setSize(s)" class="btn btn-sm border-dark">
-                      {{ s }}
-                    </button>
-                  </div>
+                    {{ s }}
+                  </button>
                 </div>
                 <form @submit.prevent="">
                   <input
@@ -148,23 +148,20 @@
                   />
 
                   <div class="row pt-5 mt-5">
-                    <div class="col d-grid">
-                      <button
-                        class="btn btn-success btn-lg"
-                        name="submit"
-                        @click="addToCartBuy(product)"
-                      >
-                        Buy
-                      </button>
-                    </div>
-                    <div class="col d-grid">
-                      <button
-                        @click="addToCart(product)"
-                        class="btn btn-success btn-lg"
-                      >
-                        Add To Cart
-                      </button>
-                    </div>
+                    <button
+                      class="btn btn-success col-5 me-1"
+                      name="submit"
+                      @click="addToCartBuy(product)"
+                    >
+                      Buy
+                    </button>
+
+                    <button
+                      @click="addToCart(product)"
+                      class="btn btn-success col-5 ms-1"
+                    >
+                      Add To Cart
+                    </button>
                   </div>
                 </form>
               </div>
@@ -256,9 +253,6 @@ watch(
 
 <style scoped>
 .card img {
-  height: 700px;
-}
-.right {
-  height: 700px;
+  height: 592px;
 }
 </style>

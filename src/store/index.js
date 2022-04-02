@@ -240,7 +240,7 @@ const store = createStore({
     async getFewProduct(context) {
       try {
         context.state.loading = true;
-        const res = await axios.get(`${API_URL}/api/products/few`);
+        const res = await axios.get(`${API_URL}/api/products_few`);
         if (res.data) {
           context.state.loading = false;
           context.commit('fewProducts', res.data);
@@ -293,19 +293,21 @@ const store = createStore({
      * fetch add product to basket
      * @param {String} _id
      */
-    async addToCart(context, c) {
-      const { data } = await axios.get(`${API_URL}/api/products/${c._id}`);
-      context.commit('addToCart', {
-        _id: data._id,
-        name: data.name,
-        image: data.image,
-        price: data.price,
-        category: data.category,
-        gender: data.gender,
-        color: noob.color,
-        size: noob.size,
-        qty: 1,
-      });
+    async addToCart(context, product) {
+      const res = await axios.get(`${API_URL}/api/products/${product._id}`);
+      if (res.data) {
+        context.commit('addToCart', {
+          _id: res.data._id,
+          name: res.data.name,
+          image: res.data.image,
+          price: res.data.price,
+          category: res.data.category,
+          gender: res.data.gender,
+          color: product.color,
+          size: product.size,
+          qty: 1,
+        });
+      }
     },
     // users CRUD
     async getUserList(context) {

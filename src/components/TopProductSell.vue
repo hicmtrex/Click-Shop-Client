@@ -30,7 +30,7 @@
         /></a>
         <h2 class="h5 text-center mt-3 mb-3">Hoodie</h2>
         <p class="text-center">
-          <router to="/shop" class="btn btn-success">Go Shop</router>
+          <router-link to="/shop" class="btn btn-success">Go Shop</router-link>
         </p>
       </div>
       <div class="col-12 col-md-4 p-5 mt-3">
