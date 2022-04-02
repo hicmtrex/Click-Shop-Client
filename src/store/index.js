@@ -116,7 +116,6 @@ const store = createStore({
       localStorage.removeItem('vuemovieshop-user');
       localStorage.removeItem('vuemovieshop-cart');
       localStorage.removeItem('vuemovieshop-address');
-      document.location.href = '/auth/login';
     },
     saveAddress(state, payload) {
       state.shippingAddress = payload;

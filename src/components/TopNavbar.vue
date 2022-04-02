@@ -111,11 +111,7 @@
                 {{ cartItems.length }}
               </span>
             </router-link>
-            <a
-              class="nav-icon position-relative text-decoration-none"
-              href="#"
-              v-if="userInfo"
-            >
+            <a class="nav-icon position-relative" href="#" v-if="userInfo">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -145,21 +141,14 @@
                 </li>
               </ul>
             </a>
-            <a
-              class="nav-icon position-relative text-decoration-none"
-              href="#"
-              v-else
-            >
-              <router-link class="nav-icon d-none d-lg-inline" to="/auth/login">
+            <div v-else>
+              <router-link class="nav-icon d-lg-inline" to="/auth/login">
                 Login
               </router-link>
-              <router-link
-                class="nav-icon d-none d-lg-inline"
-                to="/auth/register"
-              >
+              <router-link class="nav-icon d-lg-inline" to="/auth/register">
                 Register
               </router-link>
-            </a>
+            </div>
           </div>
         </div>
       </div>
@@ -169,14 +158,16 @@
 </template>
 <script setup>
 import { computed } from '@vue/runtime-core';
+import { useRouter } from 'vue-router';
 import { useStore } from 'vuex';
 
 const store = useStore();
 const userInfo = computed(() => store.state.userInfo);
 const cartItems = computed(() => store.state.cartItems);
-
+const router = useRouter();
 const userLogout = () => {
   store.commit('logout');
+  router.push('/auth/login');
 };
 </script>
 
