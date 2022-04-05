@@ -8,7 +8,7 @@
               <div class="card-body">
                 <div class="d-flex flex-column align-items-center text-center">
                   <img
-                    src="https://bootdey.com/img/Content/avatar/avatar7.png"
+                    src="https://media.istockphoto.com/vectors/user-icon-flat-isolated-on-white-background-user-symbol-vector-vector-id1300845620?k=20&m=1300845620&s=612x612&w=0&h=f4XTZDAv7NPuZbG0habSpU0sNgECM0X7nbKzTUta3n8="
                     alt="Admin"
                     class="rounded-circle"
                     width="150"
@@ -20,11 +20,9 @@
                     <p class="text-secondary mb-1">
                       {{ userInfo?.user.isAdmin ? 'Admin' : 'Customer' }}
                     </p>
-                    <p class="text-muted font-size-sm">
-                      {{ shippingAddress?.address }} {{ shippingAddress?.city }}
-                    </p>
 
-                    <button class="btn btn-dark col-12">Edit Profile</button>
+                    <!-- 
+                    <button class="btn btn-dark col-12">Edit Profile</button> -->
                   </div>
                 </div>
               </div>
