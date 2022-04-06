@@ -166,7 +166,6 @@ const userInfo = computed(() => store.state.userInfo);
 const cartItems = computed(() => store.state.cartItems);
 const router = useRouter();
 
-
 const userLogout = () => {
   store.commit('logout');
   router.push('/auth/login');

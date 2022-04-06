@@ -95,73 +95,75 @@
                 class="fa fa-fw fa-chevron-circle-up mt-1"
               ></i>
             </div>
-            <div class="row" v-if="showOrders">
-              <div
-                class="col-md-4 mb-3"
-                v-for="(order, index) in userOrders"
-                :key="order._id"
-              >
-                <div class="card h-100">
-                  <span
-                    v-if="!order.is_paid"
-                    @click="deleteOrder(order._id)"
-                    class="remove-item"
-                    ><i class="fa fa-times"></i
-                  ></span>
-                  <div class="card-body">
-                    <h6
-                      class="d-flex align-items-center mb-3 justify-content-between"
-                    >
-                      <span> # Order {{ index + 1 }}</span>
-                      <span> Price ${{ order.totalPrice }}</span>
-                    </h6>
-                    <ul class="list-group list-group-flush">
-                      <li
-                        class="list-group-item px-0 d-flex align-items-center"
-                        v-for="item in order.cartItems"
-                        :key="item._id"
-                      >
-                        <div class="row">
-                          <div class="col-md-2">
-                            <img
-                              :src="item.image"
-                              alt=""
-                              class="rounded-circle"
-                            />
-                          </div>
-                          <div class="col-md-5">
-                            <p class="cardfont">
-                              {{ item.name.substring(0, 15) }}
-                            </p>
-                          </div>
-                          <div class="col-md-2">
-                            <p class="cardfont">{{ item.qty }}</p>
-                          </div>
-                          <div class="col-md-3">
-                            <p class="cardfont">${{ item.price }}</p>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                    <div
-                      class="alert alert-danger d-flex justify-content-between align-items-center"
+            <Transition name="slide-fade">
+              <div class="row" v-if="showOrders">
+                <div
+                  class="col-md-4 mb-3"
+                  v-for="(order, index) in userOrders"
+                  :key="order._id"
+                >
+                  <div class="card h-100">
+                    <span
                       v-if="!order.is_paid"
-                    >
-                      <span> Not Paid</span>
-                      <router-link
-                        :to="`/cart/payment/${order._id}`"
-                        class="btn btn-primary btn-sm"
+                      @click="deleteOrder(order._id)"
+                      class="remove-item"
+                      ><i class="fa fa-times"></i
+                    ></span>
+                    <div class="card-body">
+                      <h6
+                        class="d-flex align-items-center mb-3 justify-content-between"
                       >
-                        Pay now</router-link
+                        <span> # Order {{ index + 1 }}</span>
+                        <span> Price ${{ order.totalPrice }}</span>
+                      </h6>
+                      <ul class="list-group list-group-flush">
+                        <li
+                          class="list-group-item px-0 d-flex align-items-center"
+                          v-for="item in order.cartItems"
+                          :key="item._id"
+                        >
+                          <div class="row">
+                            <div class="col-md-2">
+                              <img
+                                :src="item.image"
+                                alt=""
+                                class="rounded-circle"
+                              />
+                            </div>
+                            <div class="col-md-5">
+                              <p class="cardfont">
+                                {{ item.name.substring(0, 15) }}
+                              </p>
+                            </div>
+                            <div class="col-md-2">
+                              <p class="cardfont">{{ item.qty }}</p>
+                            </div>
+                            <div class="col-md-3">
+                              <p class="cardfont">${{ item.price }}</p>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                      <div
+                        class="alert alert-danger d-flex justify-content-between align-items-center"
+                        v-if="!order.is_paid"
                       >
-                    </div>
-                    <div class="alert alert-success" v-else>
-                      <span class="text-center">Paid </span>
+                        <span> Not Paid</span>
+                        <router-link
+                          :to="`/cart/payment/${order._id}`"
+                          class="btn btn-primary btn-sm"
+                        >
+                          Pay now</router-link
+                        >
+                      </div>
+                      <div class="alert alert-success" v-else>
+                        <span class="text-center">Paid </span>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </Transition>
           </div>
         </div>
       </div>
@@ -255,5 +257,18 @@ onBeforeMount(() => {
 .fa-chevron-circle-up:hover {
   opacity: 0.8;
   font-size: 1.6rem;
+}
+.slide-fade-enter-active {
+  transition: all 0.5s ease-in-out;
+}
+
+.slide-fade-leave-active {
+  transition: all 0.5s ease-in-out;
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateY(20px);
+  opacity: 0;
 }
 </style>
