@@ -123,22 +123,22 @@
                           :key="item._id"
                         >
                           <div class="row">
-                            <div class="col-md-2">
+                            <div class="col-2">
                               <img
                                 :src="item.image"
                                 alt=""
                                 class="rounded-circle"
                               />
                             </div>
-                            <div class="col-md-5">
+                            <div class="col-5">
                               <p class="cardfont">
                                 {{ item.name.substring(0, 15) }}
                               </p>
                             </div>
-                            <div class="col-md-2">
+                            <div class="col-2">
                               <p class="cardfont">{{ item.qty }}</p>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-3">
                               <p class="cardfont">${{ item.price }}</p>
                             </div>
                           </div>
@@ -236,6 +236,9 @@ onBeforeMount(() => {
   box-shadow: 0 3px 12px 0 rgba(255, 82, 82, 0.5);
   cursor: pointer;
   transition: all 0.3s;
+}
+.col-md-2 img {
+  max-width: 70px;
 }
 .remove-item:hover {
   opacity: 0.6;
