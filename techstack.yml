@@ -1,0 +1,186 @@
+repo_name: hicmtrex/Click-Shop-Client
+report_id: de7fcf7d4d653ce873f9803b5cd80216
+version: 0.1
+repo_type: Public
+timestamp: '2023-12-21T15:46:06+00:00'
+requested_by: hicmtrex
+provider: github
+branch: main
+detected_tools_count: 13
+tools:
+- name: CSS 3
+  description: The latest evolution of the Cascading Style Sheets language
+  website_url: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/6727/css.png
+  detection_source: Repo Metadata
+- name: JavaScript
+  description: Lightweight, interpreted, object-oriented language with first-class
+    functions
+  website_url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source: Repo Metadata
+- name: Vue.js
+  description: A progressive framework for building user interfaces
+  website_url: http://vuejs.org/
+  version: 3.2.31
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript MVC Frameworks
+  image_url: https://img.stackshare.io/service/3837/paeckCWC.png
+  detection_source_url: https://github.com/hicmtrex/Click-Shop-Client/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: Firstname Lastname
+  last_updated_on: 2022-03-31 21:03:18.000000000 Z
+- name: vuex
+  description: Centralized State Management for Vue.js.
+  website_url: https://vuex.vuejs.org
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: State Management Library
+  image_url: https://img.stackshare.io/service/6705/6128107.png
+  detection_source: package.json
+  last_updated_by: Firstname Lastname
+  last_updated_on: 2022-03-31 21:03:18.000000000 Z
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source: Repo Metadata
+- name: Vite
+  description: Native-ESM powered web dev build tool
+  website_url: https://vitejs.dev/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: JS Build Tools / JS Task Runners
+  image_url: https://img.stackshare.io/service/21547/default_1aeac791cde11ff66cc0b20dcc6144eeb185c905.png
+  detection_source: package.json
+  last_updated_by: Firstname Lastname
+  last_updated_on: 2022-03-31 21:03:18.000000000 Z
+- name: jsdom
+  description: A JavaScript implementation of the WHATWG DOM and HTML standards, for
+    use with node.js
+  website_url: https://github.com/jsdom/jsdom
+  version: 19.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Headless Browsers
+  image_url: https://img.stackshare.io/service/7054/preview.jpeg
+  detection_source_url: https://github.com/hicmtrex/Click-Shop-Client/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: Firstname Lastname
+  last_updated_on: 2022-03-31 21:03:18.000000000 Z
+- name: npm
+  description: The package manager for JavaScript.
+  website_url: https://www.npmjs.com/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source: package.json
+  last_updated_by: Firstname Lastname
+  last_updated_on: 2022-03-31 21:03:18.000000000 Z
+- name: axios
+  description: Promise based HTTP client for the browser and node.js
+  website_url: https://github.com/mzabriskie/axios
+  version: 0.26.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript Utilities & Libraries
+  image_url: https://img.stackshare.io/no-img-open-source.png
+  detection_source_url: https://github.com/hicmtrex/Click-Shop-Client/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: Firstname Lastname
+  last_updated_on: 2022-03-31 21:03:18.000000000 Z
+- name: "@vue/test-utils"
+  description: Utilities for testing Vue components
+  package_url: https://www.npmjs.com/@vue/test-utils
+  version: 2.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16231/default_41f04716a804e853d5c38a5b81ee0ea8a842ad82.png
+  detection_source_url: https://github.com/hicmtrex/Click-Shop-Client/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: Firstname Lastname
+  last_updated_on: 2022-03-31 21:03:18.000000000 Z
+- name: vite
+  description: Native-ESM powered web dev build tool
+  package_url: https://www.npmjs.com/vite
+  version: 2.8.6
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/npm/image.png
+  detection_source_url: https://github.com/hicmtrex/Click-Shop-Client/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: Firstname Lastname
+  last_updated_on: 2022-03-31 21:03:18.000000000 Z
+  vulnerabilities:
+  - name: Vite Server Options (server.fs.deny) can be bypassed using double forward-slash
+      (//)
+    cve_id: CVE-2023-34092
+    cve_url: https://github.com/advisories/GHSA-353f-5xf4-qw67
+    detected_date: Nov 23
+    severity: high
+    first_patched: 2.9.16
+  - name: Vitejs Vite before v2.9.13 vulnerable to directory traversal via crafted
+      URL to victim's service
+    cve_id: CVE-2022-35204
+    cve_url: https://github.com/advisories/GHSA-mv48-hcvh-8jj8
+    detected_date: Nov 23
+    severity: moderate
+    first_patched: 2.9.13
+- name: vue
+  description: Vue
+  package_url: https://www.npmjs.com/vue
+  version: 3.2.31
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15844/default_b71c906aeda030a5e2f1fe40bf12a93be52404ab.png
+  detection_source_url: https://github.com/hicmtrex/Click-Shop-Client/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: Firstname Lastname
+  last_updated_on: 2022-03-31 21:03:18.000000000 Z
+- name: vue-router
+  description: Official router for Vue.js 2
+  package_url: https://www.npmjs.com/vue-router
+  version: 4.0.14
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15969/default_261820f5687b4c88a3e8f95c71b5e8dccd34c1d7.png
+  detection_source_url: https://github.com/hicmtrex/Click-Shop-Client/blob/main/package-lock.json
+  detection_source: package.json
+  last_updated_by: Firstname Lastname
+  last_updated_on: 2022-03-31 21:03:18.000000000 Z
