@@ -2,7 +2,7 @@ repo_name: hicmtrex/Click-Shop-Client
 report_id: de7fcf7d4d653ce873f9803b5cd80216
 version: 0.1
 repo_type: Public
-timestamp: '2024-01-05T08:17:59+00:00'
+timestamp: '2024-02-29T19:09:08+00:00'
 requested_by: hicmtrex
 provider: github
 branch: main
@@ -148,6 +148,13 @@ tools:
   last_updated_by: Firstname Lastname
   last_updated_on: 2022-03-31 21:03:18.000000000 Z
   vulnerabilities:
+  - name: Vite dev server option `server.fs.deny` can be bypassed when hosted on case-insensitive
+      filesystem
+    cve_id: CVE-2024-23331
+    cve_url: https://github.com/advisories/GHSA-c24v-8rfc-w8vw
+    detected_date: Jan 20
+    severity: high
+    first_patched: 2.9.17
   - name: Vite Server Options (server.fs.deny) can be bypassed using double forward-slash
       (//)
     cve_id: CVE-2023-34092
